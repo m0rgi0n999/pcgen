@@ -1,0 +1,163 @@
+# CVS $Revision: 21393 $ $Author: evilmynex $ -- Mon Sep 15 21:55:54 2014 -- reformated by prettylst.pl v1.51 (build 25129)
+SOURCELONG:Ultimate Magic	SOURCESHORT:UM	SOURCEWEB:http://paizo.com/pathfinderRPG/v5748btpy8g7s	SOURCEDATE:2011-05
+# ORIGINAL ENTRY: Stefan Radermacher and Eric Smith (Maredudd)
+# ORIGINAL ENTRY DATE: Unknown
+
+# Class Name	Hit Dice	Type			Class Type		Abbreviation	Max Level	Source Page		Define		Combat bonus											Save bonus																					Modify VAR			Monster Role
+CLASS:Magus		HD:8		TYPE:Base.PC	CLASSTYPE:PC	ABB:Mag		MAXLEVEL:20	SOURCEPAGE:p.9	DEFINE:MagusLVL|0	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")*3/4|TYPE=Base.REPLACE	BONUS:SAVE|BASE.Fortitude,BASE.Will|classlevel("APPLIEDAS=NONEPIC")/2+2	BONUS:SAVE|BASE.Reflex|classlevel("APPLIEDAS=NONEPIC")/3	BONUS:VAR|MagusLVL|CL	ROLE:Combat
+# Class Name	Skill Pts/Lvl	Class Skill
+CLASS:Magus		STARTSKILLPTS:2	CSKILL:Climb|TYPE=Craft|Fly|Intimidate|Knowledge (Arcana)|Knowledge (Dungeoneering)|Knowledge (Planes)|TYPE=Profession|Ride|Spellcraft|Swim|Use Magic Device
+# Class Name	Spell Stat		Spell Type		Memorize		Automatically Known Spell Levels	Spellbook		Caster level
+CLASS:Magus		SPELLSTAT:INT	SPELLTYPE:Arcane	MEMORIZE:YES	KNOWNSPELLS:LEVEL=0			SPELLBOOK:YES	BONUS:CASTERLEVEL|Magus|CL
+###Block:Proficiencies
+1	ABILITY:Internal|AUTOMATIC|TYPE=WeaponProfMartial|!PREABILITY:1,CATEGORY=Archetype,TYPE.MagusWeaponProficiency
+1	ABILITY:Internal|AUTOMATIC|TYPE=ArmorProfLight|!PREABILITY:1,CATEGORY=Archetype,TYPE.MagusArmorProficiency,TYPE.MagusLightArmorProficiency|PREVARGTEQ:MagusArmorProficiencyLVL,1
+1	ABILITY:Internal|AUTOMATIC|TYPE=ArmorProfMedium|!PREABILITY:1,CATEGORY=Archetype,TYPE.MagusArmorProficiency,TYPE.MagusMediumArmorProficiency|PREVARGTEQ:MagusArmorProficiencyLVL,7
+1	ABILITY:Internal|AUTOMATIC|TYPE=ArmorProfHeavy|!PREABILITY:1,CATEGORY=Archetype,TYPE.MagusArmorProficiency,TYPE.MagusHeavyArmorProficiency|PREVARGTEQ:MagusArmorProficiencyLVL,13
+###Block: Magus Spellbook
+1	ABILITY:Internal|AUTOMATIC|Magus Free Spellbook|PREMULT:1,[PREMULT:2,[PREPCLEVEL:MAX=0],[PRECLASS:1,Magus=1]],[PREMULT:2,[!PRECLASS:1,TYPE.Base=0],[PRECLASS:1,Magus=1]]
+###Block: Class features
+1	BONUS:VAR|MagusArmorProficiencyLVL|CL
+1	BONUS:VAR|MagusArcanePoolLVL|CL
+3	BONUS:VAR|MagusArcanaLVL|CL
+10	BONUS:VAR|MagusFighterTrainingLVL|CL
+###Block:
+5	BONUS:ABILITYPOOL|Magus Bonus Feat|(CL+1)/6
+###Block:
+1	ABILITY:Magus Class Feature|AUTOMATIC|Magus ~ Armor Proficiency|!PREABILITY:1,CATEGORY=Archetype,TYPE.MagusArmorProficiency
+1	ABILITY:Magus Class Feature|AUTOMATIC|Magus ~ Arcane Pool|!PREABILITY:1,CATEGORY=Archetype,TYPE.MagusArcanePool
+1	ABILITY:Magus Class Feature|AUTOMATIC|Magus ~ Spell Combat|!PREABILITY:1,CATEGORY=Archetype,TYPE.MagusSpellCombat
+1	ABILITY:Magus Class Feature|AUTOMATIC|Magus ~ Cantrips|!PREABILITY:1,CATEGORY=Archetype,TYPE.MagusCantrips
+2	ABILITY:Magus Class Feature|AUTOMATIC|Magus ~ Spellstrike|!PREABILITY:1,CATEGORY=Archetype,TYPE.MagusSpellstrike
+3	ABILITY:Magus Class Feature|AUTOMATIC|Magus ~ Magus Arcana|!PREABILITY:1,CATEGORY=Archetype,TYPE.MagusArcana
+4	ABILITY:Magus Class Feature|AUTOMATIC|Magus ~ Spell Recall|!PREABILITY:1,CATEGORY=Archetype,TYPE.MagusSpellRecall
+7	ABILITY:Magus Class Feature|AUTOMATIC|Magus ~ Knowledge Pool|!PREABILITY:1,CATEGORY=Archetype,TYPE.MagusKnowledgePool
+8	ABILITY:Magus Class Feature|AUTOMATIC|Magus ~ Improved Spell Combat|!PREABILITY:1,CATEGORY=Archetype,TYPE.MagusImprovedSpellCombat
+10	ABILITY:Magus Class Feature|AUTOMATIC|Magus ~ Fighter Training|!PREABILITY:1,CATEGORY=Archetype,TYPE.MagusFighterTraining
+11	ABILITY:Magus Class Feature|AUTOMATIC|Magus ~ Improved Spell Recall|!PREABILITY:1,CATEGORY=Archetype,TYPE.MagusImprovedSpellRecall
+14	ABILITY:Magus Class Feature|AUTOMATIC|Magus ~ Greater Spell Combat|!PREABILITY:1,CATEGORY=Archetype,TYPE.MagusGreaterSpellCombat
+16	ABILITY:Magus Class Feature|AUTOMATIC|Magus ~ Counterstrike|!PREABILITY:1,CATEGORY=Archetype,TYPE.MagusCounterstrike
+19	ABILITY:Magus Class Feature|AUTOMATIC|Magus ~ Greater Spell Access|!PREABILITY:1,CATEGORY=Archetype,TYPE.MagusGreaterSpellAccess
+20	ABILITY:Magus Class Feature|AUTOMATIC|Magus ~ True Magus|!PREABILITY:1,CATEGORY=Archetype,TYPE.MagusTrueMagus
+###Block: Spell progression
+1	CAST:3,1
+2	CAST:4,2
+3	CAST:4,3
+4	CAST:4,3,1
+5	CAST:4,4,2
+6	CAST:5,4,3
+7	CAST:5,4,3,1
+8	CAST:5,4,4,2
+9	CAST:5,5,4,3
+10	CAST:5,5,4,3,1
+11	CAST:5,5,4,4,2
+12	CAST:5,5,5,4,3
+13	CAST:5,5,5,4,3,1
+14	CAST:5,5,5,4,4,2
+15	CAST:5,5,5,5,4,3
+16	CAST:5,5,5,5,4,3,1
+17	CAST:5,5,5,5,4,4,2
+18	CAST:5,5,5,5,5,4,3
+19	CAST:5,5,5,5,5,5,4
+20	CAST:5,5,5,5,5,5,5
+
+# COMMENT: Modify Monk to allow monk vows.  Move this to Core?
+
+# Class Name	Ability
+CLASS:Monk.MOD	ABILITY:Internal|AUTOMATIC|Allow Vows
+
+
+###Block: Bardic Masterpiece activation
+
+# Class Name
+CLASS:Bard.MOD
+1	TEMPLATE:Masterpiece Activation
+
+###Block: Variant Channeling activation
+
+# Class Name
+CLASS:Cleric.MOD
+1	BONUS:ABILITYPOOL|Variant Channeling|1|PREABILITY:1,CATEGORY=Special Ability,TYPE.Channel Energy
+
+#COMMENT: Variant Channeling should be available to some (but not all) other
+#COMMENT:   classes with a channel energy ability.  This is tricky to
+#COMMENT:   implement, since (1) paladins and clerics treat the channel
+#COMMENT:   energy ability differently, and (2) one could have a character
+#COMMENT:   with both cleric and paladin classes, and two different variant
+#COMMENT:   channelings.
+#CLASS:Paladin.MOD
+#1	BONUS:ABILITYPOOL|Variant Channeling|1|PREABILITY:1,CATEGORY=Special Ability,Channel Energy
+#CLASS:Oracle.MOD
+#1	BONUS:ABILITYPOOL|Variant Channeling|1|PREABILITY:1,CATEGORY=Special Ability,Channel Energy
+
+###Block: Animal and Terrain Domains
+
+# Class Name
+CLASS:Druid.MOD
+0	DOMAIN:Aquatic|PREABILITY:1,CATEGORY=Special Ability,Aquatic ~ Druid Domain
+0	DOMAIN:Arctic|PREABILITY:1,CATEGORY=Special Ability,Arctic ~ Druid Domain
+0	DOMAIN:Cave|PREABILITY:1,CATEGORY=Special Ability,Cave ~ Druid Domain
+0	DOMAIN:Desert|PREABILITY:1,CATEGORY=Special Ability,Desert ~ Druid Domain
+0	DOMAIN:Eagle|PREABILITY:1,CATEGORY=Special Ability,Eagle ~ Druid Domain
+0	DOMAIN:Frog|PREABILITY:1,CATEGORY=Special Ability,Frog ~ Druid Domain
+0	DOMAIN:Jungle|PREABILITY:1,CATEGORY=Special Ability,Jungle ~ Druid Domain
+0	DOMAIN:Monkey|PREABILITY:1,CATEGORY=Special Ability,Monkey ~ Druid Domain
+0	DOMAIN:Mountain|PREABILITY:1,CATEGORY=Special Ability,Mountain ~ Druid Domain
+0	DOMAIN:Plains|PREABILITY:1,CATEGORY=Special Ability,Plains ~ Druid Domain
+0	DOMAIN:Serpent|PREABILITY:1,CATEGORY=Special Ability,Serpent ~ Druid Domain
+0	DOMAIN:Swamp|PREABILITY:1,CATEGORY=Special Ability,Swamp ~ Druid Domain
+0	DOMAIN:Wolf|PREABILITY:1,CATEGORY=Special Ability,Wolf ~ Druid Domain
+
+###Block: Additional Domains for Druid archetypes
+0	DOMAIN:Cloud Subdomain|PREABILITY:1,CATEGORY=Special Ability,Druid Domain ~ Cloud Subdomain
+0	DOMAIN:Destruction|PREABILITY:1,CATEGORY=Special Ability,Destruction ~ Druid Domain
+0	DOMAIN:Storms Subdomain|PREABILITY:1,CATEGORY=Special Ability,Druid Domain ~ Storms Subdomain
+0	DOMAIN:War|PREABILITY:1,CATEGORY=Special Ability,War ~ Druid Domain
+0	DOMAIN:Wind Subdomain|PREABILITY:1,CATEGORY=Special Ability,Druid Domain ~ Wind Subdomain
+
+###Block: Wizard Elemental Schools
+
+# Class Name
+CLASS:Wizard.MOD
+SUBCLASS:Metal	CHOICE:DESCRIPTOR|MetalSchool	KNOWNSPELLSFROMSPECIALTY:1
+SUBCLASSLEVEL:1	BONUS:VAR|MetalSchoolLVL|WizardSchoolLvl	ABILITY:Special Ability|AUTOMATIC|Metal School
+SUBCLASS:Wood	CHOICE:DESCRIPTOR|WoodSchool	KNOWNSPELLSFROMSPECIALTY:1
+SUBCLASSLEVEL:1	BONUS:VAR|WoodSchoolLVL|WizardSchoolLvl	ABILITY:Special Ability|AUTOMATIC|Wood School
+
+###Block: Cleric Domain Special
+
+# Class Name
+CLASS:Cleric.MOD
+0	DOMAIN:Air|PREABILITY:1,CATEGORY=Special Ability,Air Domain ~ Forbidden Rites Domain
+0	DOMAIN:Animal|PREABILITY:1,CATEGORY=Special Ability,Animal Domain ~ Forbidden Rites Domain
+0	DOMAIN:Artifice|PREABILITY:1,CATEGORY=Special Ability,Artifice Domain ~ Forbidden Rites Domain
+0	DOMAIN:Chaos|PREABILITY:1,CATEGORY=Special Ability,Chaos Domain ~ Forbidden Rites Domain
+0	DOMAIN:Charm|PREABILITY:1,CATEGORY=Special Ability,Charm Domain ~ Forbidden Rites Domain
+0	DOMAIN:Community|PREABILITY:1,CATEGORY=Special Ability,Community Domain ~ Forbidden Rites Domain
+0	DOMAIN:Darkness|PREABILITY:1,CATEGORY=Special Ability,Darkness Domain ~ Forbidden Rites Domain
+0	DOMAIN:Death|PREABILITY:1,CATEGORY=Special Ability,Death Domain ~ Forbidden Rites Domain
+0	DOMAIN:Destruction|PREABILITY:1,CATEGORY=Special Ability,Destruction Domain ~ Forbidden Rites Domain
+0	DOMAIN:Earth|PREABILITY:1,CATEGORY=Special Ability,Earth Domain ~ Forbidden Rites Domain
+0	DOMAIN:Evil|PREABILITY:1,CATEGORY=Special Ability,Evil Domain ~ Forbidden Rites Domain
+0	DOMAIN:Fire|PREABILITY:1,CATEGORY=Special Ability,Fire Domain ~ Forbidden Rites Domain
+0	DOMAIN:Glory|PREABILITY:1,CATEGORY=Special Ability,Glory Domain ~ Forbidden Rites Domain
+0	DOMAIN:Good|PREABILITY:1,CATEGORY=Special Ability,Good Domain ~ Forbidden Rites Domain
+0	DOMAIN:Healing|PREABILITY:1,CATEGORY=Special Ability,Healing Domain ~ Forbidden Rites Domain
+0	DOMAIN:Knowledge|PREABILITY:1,CATEGORY=Special Ability,Knowledge Domain ~ Forbidden Rites Domain
+0	DOMAIN:Law|PREABILITY:1,CATEGORY=Special Ability,Law Domain ~ Forbidden Rites Domain
+0	DOMAIN:Liberation|PREABILITY:1,CATEGORY=Special Ability,Liberation Domain ~ Forbidden Rites Domain
+0	DOMAIN:Luck|PREABILITY:1,CATEGORY=Special Ability,Luck Domain ~ Forbidden Rites Domain
+0	DOMAIN:Madness|PREABILITY:1,CATEGORY=Special Ability,Madness Domain ~ Forbidden Rites Domain
+0	DOMAIN:Magic|PREABILITY:1,CATEGORY=Special Ability,Magic Domain ~ Forbidden Rites Domain
+0	DOMAIN:Nobility|PREABILITY:1,CATEGORY=Special Ability,Nobility Domain ~ Forbidden Rites Domain
+0	DOMAIN:Plant|PREABILITY:1,CATEGORY=Special Ability,Plant Domain ~ Forbidden Rites Domain
+0	DOMAIN:Protection|PREABILITY:1,CATEGORY=Special Ability,Protection Domain ~ Forbidden Rites Domain
+0	DOMAIN:Repose|PREABILITY:1,CATEGORY=Special Ability,Repose Domain ~ Forbidden Rites Domain
+0	DOMAIN:Rune|PREABILITY:1,CATEGORY=Special Ability,Rune Domain ~ Forbidden Rites Domain
+0	DOMAIN:Strength|PREABILITY:1,CATEGORY=Special Ability,Strength Domain ~ Forbidden Rites Domain
+0	DOMAIN:Sun|PREABILITY:1,CATEGORY=Special Ability,Sun Domain ~ Forbidden Rites Domain
+0	DOMAIN:Travel|PREABILITY:1,CATEGORY=Special Ability,Travel Domain ~ Forbidden Rites Domain
+0	DOMAIN:Trickery|PREABILITY:1,CATEGORY=Special Ability,Trickery Domain ~ Forbidden Rites Domain
+0	DOMAIN:War|PREABILITY:1,CATEGORY=Special Ability,War Domain ~ Forbidden Rites Domain
+0	DOMAIN:Water|PREABILITY:1,CATEGORY=Special Ability,Water Domain ~ Forbidden Rites Domain
+0	DOMAIN:Weather|PREABILITY:1,CATEGORY=Special Ability,Weather Domain ~ Forbidden Rites Domain

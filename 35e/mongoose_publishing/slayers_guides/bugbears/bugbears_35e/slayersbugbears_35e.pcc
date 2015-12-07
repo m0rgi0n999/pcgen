@@ -1,0 +1,35 @@
+# CVS $Revision: 17704 $ $Author: amaitland $
+CAMPAIGN:Mongoose - Slayers Guide - Bugbears - 3.5 Conversion
+GAMEMODE:35e
+RANK:6
+GENRE:Fantasy
+BOOKTYPE:Supplement
+SETTING:Generic
+TYPE:Mongoose.Slayers Guides
+PRECAMPAIGN:1,BOOKTYPE=Core Rules
+PUBNAMELONG:Mongoose Publishing
+PUBNAMESHORT:Mongoose
+PUBNAMEWEB:http://mongoosepublishing.com
+SOURCELONG:Mongoose Publishing - Slayer's Guide to Bugbears
+SOURCESHORT:SGtAmazons
+SOURCEWEB:http://mongoosepublishing.com
+SOURCEDATE:2001-01
+# COMMENT: Unknown Month - Set as 01
+ISOGL:YES
+COPYRIGHT:Open Game License v 1.0 Copyright 2000, Wizards of the Coast, Inc.
+COPYRIGHT:D20 System Rules & Content Copyright 2000, Wizards of the Coast, Inc.; Authors Jonathan Tweet, Monte Cook, Skip Williams, based on original material by E. Gary Gygax and Dave Arneson
+COPYRIGHT:Open game content from The Slayer's Guide to Amazons Copyright 2001, Mongoose Publishing.
+COPYRIGHT:PCGen dataset conversion for Slayer's Guide to Amazons Copyright 2003, PCGen Data Team (including, but not limited to: Andrew (Tir Gwaith) McDougal, Paul W. King, wizoffice2001)
+
+COVER:../slayersbugbears.jpg
+LOGO:@/publisher_logos/Mongoose_Publishing.png
+COPYRIGHT:Included artwork is Product Identity and is included by permission. Copyright 2008, Mongoose Publishing
+DESC:Bugbears are cunning adversaries, creatures that rarely fight to the death, preferring to flee from a lost battle in order to nurse their vengeance for another day. Adventurers who believe they can simply wade into a horde of bugbears and slay them in glorious combat are in for a rude shock and are certain to fall prey to the myriad of traps and ambushes the bugbears use in their own style of warfare.
+URL:WEBSITE|http://www.mongoosepublishing.com|Visit Mongoose Publishing.
+
+CLASS:../slayersbugbearsclasses.lst
+DEITY:../slayersbugbearsdeities.lst
+DOMAIN:../slayersbugbearsdomains.lst
+SPELL:../slayersbugbearsspells.lst
+
+SPELL:slayersbugbearsspells_35e.lst

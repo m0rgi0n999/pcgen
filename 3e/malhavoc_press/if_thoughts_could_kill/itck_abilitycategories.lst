@@ -1,0 +1,3 @@
+# CVS $Revision: 25047 $ $Author: amaitland $ -- Wed Sep  3 00:18:24 2014 -- reformated by prettylst.pl v1.51 (build 24947)
+# Ability Category			Visible		Editable?		Change Pool?	Category of Object		Specific choices list			Display Location
+ABILITYCATEGORY:Power Sequestration	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:YES	CATEGORY:Special Ability	ABILITYLIST:Power Sequestration	DISPLAYLOCATION:Class Abilities

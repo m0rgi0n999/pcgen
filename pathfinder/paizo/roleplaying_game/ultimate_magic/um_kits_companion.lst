@@ -1,0 +1,160 @@
+# CVS $Revision: $ $Author: $ -- Thu Jul 10 13:41:29 2014 -- reformated by prettylst.pl v1.51 (build 24365)
+# ORIGINAL ENTRY: unknown and Douglas Limmer
+# ORIGINAL ENTRY DATE: unknown
+
+###Block: Eidolon kits
+STARTPACK:Eidolon (Aquatic)	TYPE:Companion	VISIBLE:NO	PREMULT:1,[!PRERACE:1,%],[PRERACE:1,Eidolon (Aquatic)]
+RACE:Eidolon (Aquatic)	!PRERACE:1,%
+STAT:STR=10|DEX=10|CON=11|INT=11|WIS=10|CHA=11
+ABILITY:CATEGORY=Eidolon Aquatic Evolution|Evolution_Bite
+ABILITY:CATEGORY=Eidolon Aquatic Evolution|Evolution_Improved_Natural_Armor
+ABILITY:CATEGORY=Eidolon Aquatic Evolution|Evolution_Gills
+ABILITY:CATEGORY=Eidolon Aquatic Evolution|Evolution_Swim
+ABILITY:CATEGORY=Eidolon Aquatic Evolution|Evolution_Improved_Swim
+
+###Block: Eidolon kits
+STARTPACK:Fused Eidolon (Aquatic)	TYPE:Companion	VISIBLE:NO	PREMULT:1,[!PRERACE:1,%],[PRERACE:1,Fused Eidolon (Aquatic)]
+RACE:Fused Eidolon (Aquatic)	!PRERACE:1,%
+STAT:STR=10|DEX=10|CON=11|INT=10|WIS=10|CHA=10
+ABILITY:CATEGORY=Eidolon Aquatic Evolution|Evolution_Bite
+ABILITY:CATEGORY=Eidolon Aquatic Evolution|Evolution_Improved_Natural_Armor
+ABILITY:CATEGORY=Eidolon Aquatic Evolution|Evolution_Gills
+ABILITY:CATEGORY=Eidolon Aquatic Evolution|Evolution_Swim
+ABILITY:CATEGORY=Eidolon Aquatic Evolution|Evolution_Improved_Swim
+
+STARTPACK:Fused Eidolon (Quadruped)	TYPE:Companion	VISIBLE:NO	PREMULT:1,[!PRERACE:1,%],[PRERACE:1,Fused Eidolon (Quadruped)]
+RACE:Fused Eidolon (Quadruped)	!PRERACE:1,%
+STAT:STR=10|DEX=10|CON=11|INT=10|WIS=10|CHA=10
+ABILITY:CATEGORY=Eidolon Quadruped Evolution|Evolution_Legs
+ABILITY:CATEGORY=Eidolon Quadruped Evolution|Evolution_Legs
+ABILITY:CATEGORY=Eidolon Quadruped Evolution|Evolution_Bite
+
+STARTPACK:Fused Eidolon (Biped)	TYPE:Companion	VISIBLE:NO	PREMULT:1,[!PRERACE:1,%],[PRERACE:1,Fused Eidolon (Biped)]
+RACE:Fused Eidolon (Biped)	!PRERACE:1,%
+STAT:STR=10|DEX=10|CON=11|INT=10|WIS=10|CHA=10
+ABILITY:CATEGORY=Eidolon Biped Evolution|Evolution_Arms
+ABILITY:CATEGORY=Eidolon Biped Evolution|Evolution_Legs
+ABILITY:CATEGORY=Eidolon Biped Evolution|Evolution_Clawed_Hands
+
+STARTPACK:Fused Eidolon (Serpentine)	TYPE:Companion	VISIBLE:NO	PREMULT:1,[!PRERACE:1,%],[PRERACE:1,Fused Eidolon (Serpentine)]
+RACE:Fused Eidolon (Serpentine)	!PRERACE:1,%
+STAT:STR=10|DEX=10|CON=11|INT=10|WIS=10|CHA=10
+ABILITY:CATEGORY=Eidolon Serpentine Evolution|Evolution_Bite
+ABILITY:CATEGORY=Eidolon Serpentine Evolution|Evolution_Tail
+ABILITY:CATEGORY=Eidolon Serpentine Evolution|Evolution_Climb
+ABILITY:CATEGORY=Eidolon Serpentine Evolution|Evolution_Reach (Bite)
+ABILITY:CATEGORY=Eidolon Serpentine Evolution|Evolution_Tail_Slap
+
+###Block: Vermin Companion kits
+STARTPACK:Companion ~ Giant Ant	TYPE:Companion	VISIBLE:NO
+STAT:STR=10|DEX=10|CON=11|INT=10|WIS=10|CHA=10
+
+STARTPACK:Companion ~ Giant Beetle	TYPE:Companion	VISIBLE:NO
+STAT:STR=11|DEX=10|CON=11|INT=10|WIS=11|CHA=10
+
+STARTPACK:Companion ~ Giant Centipede	TYPE:Companion	VISIBLE:NO
+STAT:STR=10|DEX=11|CON=11|INT=10|WIS=10|CHA=10
+
+STARTPACK:Companion ~ Giant Crab	TYPE:Companion	VISIBLE:NO
+STAT:STR=11|DEX=10|CON=11|INT=10|WIS=11|CHA=10
+
+STARTPACK:Companion ~ Giant Leech	TYPE:Companion	VISIBLE:NO
+STAT:STR=11|DEX=10|CON=10|INT=10|WIS=10|CHA=10
+
+STARTPACK:Companion ~ Giant Mantis	TYPE:Companion	VISIBLE:NO
+STAT:STR=10|DEX=11|CON=10|INT=10|WIS=10|CHA=11
+
+STARTPACK:Companion ~ Giant Scorpion	TYPE:Companion	VISIBLE:NO
+STAT:STR=11|DEX=10|CON=10|INT=10|WIS=10|CHA=10
+
+STARTPACK:Companion ~ Giant Slug	TYPE:Companion	VISIBLE:NO
+STAT:STR=11|DEX=10|CON=11|INT=10|WIS=10|CHA=10
+
+STARTPACK:Companion ~ Giant Spider	TYPE:Companion	VISIBLE:NO
+STAT:STR=10|DEX=11|CON=10|INT=10|WIS=10|CHA=10
+
+STARTPACK:Companion ~ Giant Wasp	TYPE:Companion	VISIBLE:NO
+STAT:STR=10|DEX=10|CON=11|INT=10|WIS=11|CHA=10
+
+STARTPACK:Black Blade	TYPE:Companion	VISIBLE:NO
+STAT:STR=10|DEX=10|CON=10|INT=10|WIS=10|CHA=10
+
+
+###Block: Familiar kits
+# COMMENT: Do vermin familiars get a feat?
+
+STARTPACK:Familiar ~ Blue-Ringed Octopus	TYPE:Improved Familiar	VISIBLE:NO
+ALIGN:TN
+STAT:STR=10|DEX=11|CON=10|INT=10|WIS=11|CHA=11
+SKILL:Stealth	RANK:1
+FEAT:Weapon Finesse
+
+STARTPACK:Familiar ~ Donkey Rat	TYPE:Improved Familiar	VISIBLE:NO
+ALIGN:TN
+STAT:STR=10|DEX=11|CON=11|INT=10|WIS=11|CHA=10
+SKILL:Stealth	RANK:1
+FEAT:Skill Focus (Perception)
+
+STARTPACK:Familiar ~ Fox UM	TYPE:Familiar	VISIBLE:NO
+ALIGN:TN
+STAT:STR=11|DEX=11|CON=11|INT=10|WIS=10|CHA=10
+SKILL:Stealth	RANK:1
+FEAT:Skill Focus (Perception)
+
+STARTPACK:Familiar ~ Goat	TYPE:Familiar	VISIBLE:NO
+ALIGN:TN
+STAT:STR=10|DEX=11|CON=11|INT=10|WIS=11|CHA=10
+SKILL:Stealth	RANK:1
+FEAT:Nimble Moves
+
+#STARTPACK:Familiar ~ Greensting Scorpion	TYPE:Familiar	VISIBLE:NO
+#ALIGN:TN
+#STAT:STR=11|DEX=11|CON=10|INT=10|WIS=11|CHA=10
+#SKILL:Stealth	RANK:1
+
+STARTPACK:Familiar ~ Hedgehog	TYPE:Familiar	VISIBLE:NO
+ALIGN:TN
+STAT:STR=10|DEX=10|CON=10|INT=10|WIS=10|CHA=11
+SKILL:Stealth	RANK:1
+FEAT:Athletic
+
+STARTPACK:Familiar ~ House Centipede	TYPE:Familiar	VISIBLE:NO
+ALIGN:TN
+STAT:STR=10|DEX=11|CON=10|INT=10|WIS=10|CHA=10
+SKILL:Stealth	RANK:1
+
+STARTPACK:Familiar ~ King Crab	TYPE:Familiar	VISIBLE:NO
+ALIGN:TN
+STAT:STR=11|DEX=11|CON=10|INT=10|WIS=10|CHA=10
+SKILL:Stealth	RANK:1
+
+STARTPACK:Familiar ~ Pig	TYPE:Familiar	VISIBLE:NO
+ALIGN:TN
+STAT:STR=11|DEX=10|CON=11|INT=10|WIS=11|CHA=10
+SKILL:Perception	RANK:1
+FEAT:Great Fortitude
+
+STARTPACK:Familiar ~ Scarlet Spider	TYPE:Familiar	VISIBLE:NO
+ALIGN:TN
+STAT:STR=11|DEX=11|CON=10|INT=10|WIS=10|CHA=10
+SKILL:Stealth	RANK:1
+
+STARTPACK:Familiar ~ Thrush	TYPE:Familiar	VISIBLE:NO
+ALIGN:TN
+STAT:STR=10|DEX=11|CON=10|INT=10|WIS=11|CHA=10
+SKILL:Fly	RANK:1
+FEAT:Skill Focus (Perception)
+
+STARTPACK:Thrush Familiar Language	TYPE:Familiar	VISIBLE:NO
+TEMPLATE:Thrush Familiar Language
+
+STARTPACK:Familiar ~ Turtle	TYPE:Familiar	VISIBLE:NO
+ALIGN:TN
+STAT:STR=11|DEX=10|CON=10|INT=10|WIS=10|CHA=11
+SKILL:Swim	RANK:1
+FEAT:Skill Focus (Perception)
+
+
+###Block: Not a companion kit; a kit for use with monk vows
+STARTPACK:Add Vow Placeholder	VISIBLE:NO
+ABILITY:CATEGORY=Vow|Vow Placeholder

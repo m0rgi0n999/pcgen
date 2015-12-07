@@ -1,0 +1,13 @@
+# CVS $Revision: 24813 $ $Author: amaitland $ -- Thu Aug  7 11:38:58 2014 -- reformated by prettylst.pl v1.51 (build 24365)
+SOURCELONG:Secrets of the Planes - Planar Magic	SOURCESHORT:PlanarMagic	SOURCEWEB:http://www.lionsdenpress.com/	SOURCEDATE:2005-01
+# Original Entry by: Tir Gwaith
+
+# Ability Name	Category of Ability		Type							Define																												Description																									Modify VAR																																												Source Page
+Planar Turning	CATEGORY:Special Ability	TYPE:SpecialAttack.Turning.TurnPlanar	DEFINE:TurnTimesPlanar|0	DEFINE:TurnLevelPlanar|0	DEFINE:TurnDicePlanar|0	DEFINE:TurnDieSizePlanar|0	DEFINE:TurnDamagePlusPlanar|0	DEFINE:TurnCheckPlanar|0	DESC:Turn Planar (Su) %1/day (turn level %2) (turn damage %3d%4+%5)|TurnTimesPlanar|TurnLevelPlanar|TurnDicePlanar|TurnDieSizePlanar|TurnDamagePlusPlanar	BONUS:VAR|TurnTimesPlanar|TurnTimesBase	BONUS:VAR|TurnLevelPlanar|TurnLevelBase	BONUS:VAR|TurnDicePlanar|TurnDiceBase	BONUS:VAR|TurnDieSizePlanar|TurnDieSizeBase	BONUS:VAR|TurnDamagePlusPlanar|TurnDamagePlusBase	BONUS:VAR|TurnCheckPlanar|TurnCheckBase	SOURCEPAGE:p.7
+
+###Block: Aspects
+# Ability Name						Unique Key					Category of Ability		Type						Aspects
+CATEGORY=Special Ability|Planar Turning.MOD																		ASPECT:TurnType|Turn	ASPECT:TurnKind|Planar	ASPECT:TurnTimes|%1|TurnTimesPlanar	ASPECT:TurnLevel|%1|TurnLevelPlanar	ASPECT:TurnDamage|%1d%2+%3|TurnDicePlanar|TurnDieSizePlanar|TurnDamagePlusPlanar	ASPECT:TurnCheck|%1|TurnCheckPlanar	ASPECT:TurnNotes|You destroy Planar creatures with total hit dice up to %1.|TurnLevelPlanar/2
+
+# Planar Mage
+Well Learned						KEY:Well Learned ~ Planar Mage	CATEGORY:Special Ability	TYPE:SpecialQuality.Extraordinary

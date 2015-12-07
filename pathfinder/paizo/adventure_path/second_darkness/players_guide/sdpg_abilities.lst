@@ -1,0 +1,68 @@
+# CVS $Revision: $ $Author: $ -- Mon Sep 15 21:55:54 2014 -- reformated by prettylst.pl v1.51 (build 25129)
+SOURCELONG:Second Darkness Player's Guide	SOURCESHORT:SDPG	SOURCEWEB:http://paizo.com/pathfinder/companion/35E/v5748btpy84en	SOURCEDATE:2008-08
+
+###Block: Combat Traits
+# Ability Name							Source Page
+CATEGORY=Special Ability|Trait ~ Anatomist.MOD		SOURCEPAGE:p.11
+CATEGORY=Special Ability|Trait ~ Armor Expert.MOD	SOURCEPAGE:p.11
+CATEGORY=Special Ability|Trait ~ Bullied.MOD		SOURCEPAGE:p.11
+CATEGORY=Special Ability|Trait ~ Courageous.MOD		SOURCEPAGE:p.11
+CATEGORY=Special Ability|Trait ~ Deft Dodger.MOD	SOURCEPAGE:p.11
+CATEGORY=Special Ability|Trait ~ Dirty Fighter.MOD	SOURCEPAGE:p.11
+CATEGORY=Special Ability|Trait ~ Fencer.MOD		SOURCEPAGE:p.11
+CATEGORY=Special Ability|Trait ~ Killer.MOD		SOURCEPAGE:p.11
+CATEGORY=Special Ability|Trait ~ Reactionary.MOD	SOURCEPAGE:p.11
+CATEGORY=Special Ability|Trait ~ Resilient.MOD		SOURCEPAGE:p.12
+
+###Block: Faith Traits
+# Ability Name									Source Page
+CATEGORY=Special Ability|Trait ~ Birthmark.MOD				SOURCEPAGE:p.12
+CATEGORY=Special Ability|Trait ~ Caretaker.MOD				SOURCEPAGE:p.12
+CATEGORY=Special Ability|Trait ~ Child of the Temple.MOD		SOURCEPAGE:p.12
+CATEGORY=Special Ability|Trait ~ Devotee of the Green.MOD		SOURCEPAGE:p.12
+CATEGORY=Special Ability|Trait ~ Ease of Faith.MOD			SOURCEPAGE:p.12
+CATEGORY=Special Ability|Trait ~ History of Heresy.MOD		SOURCEPAGE:p.12
+CATEGORY=Special Ability|Trait ~ Indomitable Faith.MOD		SOURCEPAGE:p.12
+CATEGORY=Special Ability|Trait ~ Sacred Conduit.MOD			SOURCEPAGE:p.12
+CATEGORY=Special Ability|Trait ~ Sacred Touch.MOD			SOURCEPAGE:p.12
+CATEGORY=Special Ability|Trait ~ Scholar of the Great Beyond.MOD	SOURCEPAGE:p.12
+
+###Block: Magic Traits
+# Ability Name								Source Page
+CATEGORY=Special Ability|Trait ~ Classically Schooled.MOD	SOURCEPAGE:p.12
+CATEGORY=Special Ability|Trait ~ Dangerously Curious.MOD	SOURCEPAGE:p.12
+CATEGORY=Special Ability|Trait ~ Focused Mind.MOD		SOURCEPAGE:p.13
+CATEGORY=Special Ability|Trait ~ Gifted Adept.MOD		SOURCEPAGE:p.13
+CATEGORY=Special Ability|Trait ~ Hedge Magician.MOD		SOURCEPAGE:p.13
+CATEGORY=Special Ability|Trait ~ Magical Knack.MOD		SOURCEPAGE:p.13
+CATEGORY=Special Ability|Trait ~ Magical Lineage.MOD		SOURCEPAGE:p.13
+CATEGORY=Special Ability|Trait ~ Magical Talent.MOD		SOURCEPAGE:p.13
+CATEGORY=Special Ability|Trait ~ Mathematical Prodigy.MOD	SOURCEPAGE:p.13
+CATEGORY=Special Ability|Trait ~ Skeptic.MOD			SOURCEPAGE:p.13
+
+###Block: Social Traits
+# Ability Name								Source Page
+CATEGORY=Special Ability|Trait ~ Adopted.MOD			SOURCEPAGE:p.13
+CATEGORY=Special Ability|Trait ~ Bully.MOD			SOURCEPAGE:p.13
+CATEGORY=Special Ability|Trait ~ Canter.MOD			SOURCEPAGE:p.13
+CATEGORY=Special Ability|Trait ~ Charming.MOD			SOURCEPAGE:p.13
+CATEGORY=Special Ability|Trait ~ Child of the Streets.MOD	SOURCEPAGE:p.13
+CATEGORY=Special Ability|Trait ~ Fast-Talker.MOD		SOURCEPAGE:p.13
+CATEGORY=Special Ability|Trait ~ Natural-Born Leader.MOD	SOURCEPAGE:p.13
+CATEGORY=Special Ability|Trait ~ Poverty-Stricken.MOD		SOURCEPAGE:p.14
+CATEGORY=Special Ability|Trait ~ Rich Parents.MOD		SOURCEPAGE:p.14
+CATEGORY=Special Ability|Trait ~ Suspicious.MOD			SOURCEPAGE:p.14
+
+###Block: Campaign Traits
+# Ability Name		Unique Key					Category of Ability		Type		Description																																								Stackable?	Multiple?	Choose																		Save bonus				Bonus to skill			Class Skill	Source Page
+Fools for Friends		KEY:Trait ~ Fools for Friends		CATEGORY:Special Ability	TYPE:Trait	DESC:You don't think of yourself as a gambler.																																																																					SOURCEPAGE:p.14
+Into Enemy Territory	KEY:Trait ~ Into Enemy Territory	CATEGORY:Special Ability	TYPE:Trait	DESC:The shadow in the sky is visible from all around Riddleport, not just in town.																												STACK:NO	MULT:YES	CHOOSE:NUMCHOICES=1|STRING|Fortitude|Reflex|Will											BONUS:SAVE|%LIST|1|TYPE=Trait								SOURCEPAGE:p.15
+Looking for Work		KEY:Trait ~ Looking for Work		CATEGORY:Special Ability	TYPE:Trait	DESC:Although out of work, you aren't particularly keen on the prospect of gambling away your last remaining coins simply for a chance at riches.																	STACK:NO	MULT:YES	CHOOSE:NUMCHOICES=1|SKILL|Bluff|Diplomacy|Intimidate|Perception|Profession (Gambler)|TYPE=Craft|TYPE=Perform						BONUS:SKILL|LIST|1|TYPE=Trait	CSKILL:LIST	SOURCEPAGE:p.15
+Optimistic Gambler	KEY:Trait ~ Optimistic Gambler	CATEGORY:Special Ability	TYPE:Trait	DESC:You've always seemed to have trouble keeping money. Worse, you always seem to have debts looming over your head.																																																									SOURCEPAGE:p.15
+Researching the Blot	KEY:Trait ~ Researching the Blot	CATEGORY:Special Ability	TYPE:Trait	DESC:You may or may not be seeking membership into Riddleport's most prestigious magical guild, the Order of Cyphers, but you certainly have heard their call for aid in determining the nature of the strange shadow in the sky above Riddleport.																																				SOURCEPAGE:p.15
+Scouting for Fiends	KEY:Trait ~ Scouting for Fiends	CATEGORY:Special Ability	TYPE:Trait	DESC:You belong to an organization (most likely a religion) that has definite views on the menace posed by the lower planes.																																																								SOURCEPAGE:p.15
+
+
+#
+# End
+#

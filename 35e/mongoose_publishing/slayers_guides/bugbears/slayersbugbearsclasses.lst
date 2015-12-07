@@ -1,0 +1,11 @@
+SOURCELONG:Mongoose Publishing - Slayer's Guide to Bugbears	SOURCESHORT:SGtBugbears	SOURCEWEB:http://mongoosepublishing.com	SOURCEDATE:2001-01
+
+
+CLASS:Dark Ranger	ABB:DRgr	MAXLEVEL:5	PRERACE:1,Bugbear	PRESKILL:2,Move Silently=6,Hide=4	HD:8
+CLASS:Dark Ranger	CSKILL:Climb,Craft (trapmaking),Disguise,Heal,Hide,Jump,Knowledge (Nature),Listen,Move Silently,Search,Spot,Survival,Swim,Use Rope
+CLASS:Dark Ranger	STARTSKILLPTS:3+INT	
+1	SAB:Sneak Attack +%d%|Sneak Attack|Sneak Attack Die
+2	
+3
+4
+5
